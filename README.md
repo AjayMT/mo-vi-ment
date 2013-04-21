@@ -2,21 +2,21 @@
 Mo-vi-ment is a minor mode for Emacs that provides vi-like cursor movement that's easy on your fingers. With 
 mo-vi-ment mode enabled, you can move the cursor like so -
 
-        M-&#93;
+        M-]
     
-    M-p    M-\
+    M-p     M-\
     
-        M-&#91;
+        M-[
 
-I didn't map the `H J K L` keys because the were mapped to some pretty frequently used functions.
+Pressing shift before pressing the movement keys will move the cursor by page (for vertical movement) or by line 
+(for horizontal movement). I didn't map the `H J K L` keys because the were mapped to some pretty frequently used functions.
 
 ## Installation
 Install it via [MELPA](http://melpa.milkbox.net/).
 
     M-x package-install RET mo-vi-ment
 
-Or drop `mo-vi-ment.el` somewhere in your load path and add the following to your `.emacs`/`.emacs.d/init.el` 
-file.
+Or drop `mo-vi-ment.el` somewhere in your load path and add the following to your `.emacs.d/init.el` file.
 
     (require 'mo-vi-ment)
 
@@ -24,7 +24,7 @@ file.
 
     M-x mo-vi-ment-mode
 
-Or, for a more permanent solution, add this to your `.emacs`/`.emacs.d/init.el` file.
+Or, for a more permanent solution, add this to your `.emacs.d/init.el` file.
 
     (mo-vi-ment-mode 1)
 
