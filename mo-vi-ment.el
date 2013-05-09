@@ -64,3 +64,6 @@ When mo-vi-ment mode is enabled, the following key bindings are set -
   :global t)
 
 (provide 'mo-vi-ment)
+
+;;; mo-vi-ment.el ends here
+
