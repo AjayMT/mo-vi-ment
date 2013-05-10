@@ -14,11 +14,11 @@ Pressing shift before pressing the movement keys will move the cursor by page (f
 ## Installation
 Install it via [MELPA](http://melpa.milkbox.net/).
 
-    M-x package-install RET mo-vi-ment
+    M-x package-install RET mo-vi-ment-mode
 
 Or drop `mo-vi-ment.el` somewhere in your load path and add the following to your `.emacs.d/init.el` file.
 
-    (require 'mo-vi-ment)
+    (require 'mo-vi-ment-mode)
 
 ## Usage
 
