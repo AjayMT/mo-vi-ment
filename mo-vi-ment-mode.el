@@ -1,4 +1,4 @@
-;;; mo-vi-ment.el --- Provide vi-like cursor movement that's easy on the fingers
+;;; mo-vi-ment-mode.el --- Provide vi-like cursor movement that's easy on the fingers
 
 ;; Copyright (C) 2013 Ajay MT
 
@@ -65,4 +65,4 @@ When mo-vi-ment mode is enabled, the following key bindings are set -
 
 (provide 'mo-vi-ment)
 
-;;; mo-vi-ment.el ends here
+;;; mo-vi-ment-mode.el ends here
