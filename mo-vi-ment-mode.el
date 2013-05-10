@@ -40,16 +40,7 @@ the mode, `toggle' toggles the state.
 
 When mo-vi-ment mode is enabled, the following key bindings are set -
 
-    Key        Function
-    ---------------------------------
-    M-p        backward-char
-    M-\\        forward-char
-    M-[        next-line
-    M-]        previous-line
-    M-P        move-beginning-of-line
-    M-|        move-end-of-line
-    M-{        scroll-up-command
-    M-}        scroll-down-command"
+    \\{mo-vi-ment-mode-keymap}"
   
   ;; Initial value
   nil
@@ -63,6 +54,6 @@ When mo-vi-ment mode is enabled, the following key bindings are set -
   ;; Globalize it
   :global t)
 
-(provide 'mo-vi-ment)
+(provide 'mo-vi-ment-mode)
 
 ;;; mo-vi-ment-mode.el ends here
