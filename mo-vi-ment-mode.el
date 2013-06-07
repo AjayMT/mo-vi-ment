@@ -21,21 +21,21 @@
 
 ;; Keybindings
 (defvar mo-vi-ment-mode-keymap (make-keymap) "mo-vi-ment-mode keymap.")
-(define-key mo-vi-ment-mode-keymap (kbd "M-p") 'backward-char)
-(define-key mo-vi-ment-mode-keymap (kbd "M-\\") 'forward-char)
-(define-key mo-vi-ment-mode-keymap (kbd "M-[") 'next-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-]") 'previous-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-P") 'move-beginning-of-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-|") 'move-end-of-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-{") 'scroll-up-command)
-(define-key mo-vi-ment-mode-keymap (kbd "M-}") 'scroll-down-command)
+(define-key mo-vi-ment-mode-keymap (kbd "M-j") 'backward-char)
+(define-key mo-vi-ment-mode-keymap (kbd "M-;") 'forward-char)
+(define-key mo-vi-ment-mode-keymap (kbd "M-k") 'next-line)
+(define-key mo-vi-ment-mode-keymap (kbd "M-l") 'previous-line)
+(define-key mo-vi-ment-mode-keymap (kbd "M-J") 'move-beginning-of-line)
+(define-key mo-vi-ment-mode-keymap (kbd "M-:") 'move-end-of-line)
+(define-key mo-vi-ment-mode-keymap (kbd "M-K") 'scroll-up-command)
+(define-key mo-vi-ment-mode-keymap (kbd "M-L") 'scroll-down-command)
 
 (define-minor-mode mo-vi-ment-mode
   ;; Description
   "Toggle Mo-vi-ment mode. 
 Interactively with no argument, this command toggles mo-vi-ment mode.
 A positive prefix argument enables the mode, any other prefix
-argument disables it.  From Lisp, argument omitted or nil enables
+argument disables it. From Lisp, argument omitted or nil enables
 the mode, `toggle' toggles the state.
 
 When mo-vi-ment mode is enabled, the following key bindings are set -
