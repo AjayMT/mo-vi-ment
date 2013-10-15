@@ -19,11 +19,10 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-;; Keybindings
-
 
 ;;; Code:
 
+;; Keybindings
 (defvar mo-vi-ment-mode-keymap (make-keymap) "mo-vi-ment-mode keymap.")
 (define-key mo-vi-ment-mode-keymap (kbd "M-j") 'backward-char)
 (define-key mo-vi-ment-mode-keymap (kbd "M-;") 'forward-char)
