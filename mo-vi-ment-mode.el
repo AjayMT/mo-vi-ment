@@ -21,7 +21,9 @@
 
 ;; Keybindings
 
+
 ;;; Code:
+
 (defvar mo-vi-ment-mode-keymap (make-keymap) "mo-vi-ment-mode keymap.")
 (define-key mo-vi-ment-mode-keymap (kbd "M-j") 'backward-char)
 (define-key mo-vi-ment-mode-keymap (kbd "M-;") 'forward-char)
@@ -32,6 +34,7 @@
 (define-key mo-vi-ment-mode-keymap (kbd "M-K") 'scroll-up-command)
 (define-key mo-vi-ment-mode-keymap (kbd "M-L") 'scroll-down-command)
 
+;;;###autoload
 (define-minor-mode mo-vi-ment-mode
   ;; Description
   "Toggle Mo-vi-ment mode. 
