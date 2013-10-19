@@ -2,9 +2,9 @@
 
 ;; Copyright (C) 2013 Ajay MT
 
-;; Author: Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.ruhoh.com)
+;; Author: Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)
 ;; Keywords: convenience
-;; Version: 0.2
+;; Version: 0.3
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,15 +23,15 @@
 ;;; Code:
 
 ;; Keybindings
-(defvar mo-vi-ment-mode-keymap (make-keymap) "mo-vi-ment-mode keymap.")
-(define-key mo-vi-ment-mode-keymap (kbd "M-j") 'backward-char)
-(define-key mo-vi-ment-mode-keymap (kbd "M-;") 'forward-char)
-(define-key mo-vi-ment-mode-keymap (kbd "M-k") 'next-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-l") 'previous-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-J") 'move-beginning-of-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-:") 'move-end-of-line)
-(define-key mo-vi-ment-mode-keymap (kbd "M-K") 'scroll-up-command)
-(define-key mo-vi-ment-mode-keymap (kbd "M-L") 'scroll-down-command)
+(defvar mo-vi-ment-mode-map (make-keymap) "mo-vi-ment-mode keymap.")
+(define-key mo-vi-ment-mode-map (kbd "M-j") 'backward-char)
+(define-key mo-vi-ment-mode-map (kbd "M-;") 'forward-char)
+(define-key mo-vi-ment-mode-map (kbd "M-k") 'next-line)
+(define-key mo-vi-ment-mode-map (kbd "M-l") 'previous-line)
+(define-key mo-vi-ment-mode-map (kbd "M-J") 'move-beginning-of-line)
+(define-key mo-vi-ment-mode-map (kbd "M-:") 'move-end-of-line)
+(define-key mo-vi-ment-mode-map (kbd "M-K") 'scroll-up-command)
+(define-key mo-vi-ment-mode-map (kbd "M-L") 'scroll-down-command)
 
 ;;;###autoload
 (define-minor-mode mo-vi-ment-mode
@@ -44,7 +44,7 @@ the mode, `toggle' toggles the state.
 
 When mo-vi-ment mode is enabled, the following key bindings are set -
 
-    \\{mo-vi-ment-mode-keymap}"
+    \\{mo-vi-ment-mode-map}"
   
   ;; Initial value
   nil
@@ -53,7 +53,7 @@ When mo-vi-ment mode is enabled, the following key bindings are set -
   " mo-vi-ment"
   
   ;; Keybindings
-  mo-vi-ment-mode-keymap
+  mo-vi-ment-mode-map
   
   ;; Globalize it
   :global t)
