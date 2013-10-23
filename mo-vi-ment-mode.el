@@ -4,7 +4,7 @@
 
 ;; Author: Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)
 ;; Keywords: convenience
-;; Version: 0.3
+;; Version: 0.4
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -23,7 +23,7 @@
 ;;; Code:
 
 ;; Keybindings
-(defvar mo-vi-ment-mode-map (make-keymap) "mo-vi-ment-mode keymap.")
+(defvar mo-vi-ment-mode-map (make-sparse-keymap) "mo-vi-ment-mode keymap.")
 (define-key mo-vi-ment-mode-map (kbd "M-j") 'backward-char)
 (define-key mo-vi-ment-mode-map (kbd "M-;") 'forward-char)
 (define-key mo-vi-ment-mode-map (kbd "M-k") 'next-line)
