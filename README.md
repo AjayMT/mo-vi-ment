@@ -17,7 +17,9 @@ Install it via [MELPA](http://melpa.milkbox.net/).
 
 Or drop `mo-vi-ment.el` somewhere in your load path and add the following to your `.emacs.d/init.el` file.
 
-    (require 'mo-vi-ment-mode)
+```lisp
+(require 'mo-vi-ment-mode)
+```
 
 ## Usage
 
@@ -25,5 +27,7 @@ Or drop `mo-vi-ment.el` somewhere in your load path and add the following to you
 
 Or, for a more permanent solution, add this to your `.emacs.d/init.el` file.
 
-    (mo-vi-ment-mode 1)
+```lisp
+(mo-vi-ment-mode 1)
+```
 
