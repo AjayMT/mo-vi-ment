@@ -8,8 +8,7 @@ mo-vi-ment mode enabled, you can move the cursor like so -
     
         M-k
 
-Pressing shift before pressing the movement keys will move the cursor by page (for vertical movement) or by line 
-(for horizontal movement).
+Pressing shift before pressing the movement keys will move the cursor by page (for vertical movement) or by line (for horizontal movement). Pressing control before pressing the movement keys will make the point 'jump' (see `mo-vi-ment-jump-length`).
 
 ## Installation
 Install it via [MELPA](http://melpa.milkbox.net/).
