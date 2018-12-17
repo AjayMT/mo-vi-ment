@@ -4,7 +4,7 @@
 
 ;; Author: Ajay MT <ajay.tatachar@gmail.com> (http://ajaymt.github.com)
 ;; Keywords: convenience
-;; Version: 0.5
+;; Version: 1.0
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
