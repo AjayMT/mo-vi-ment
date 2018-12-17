@@ -1,6 +1,5 @@
 # Mo-vi-ment
-Mo-vi-ment is a minor mode for Emacs that provides vi-like cursor movement that's easy on your fingers. With 
-mo-vi-ment mode enabled, you can move the cursor like so -
+Mo-vi-ment is a minor mode for Emacs that provides vi-like cursor movement that's easy on your fingers. With mo-vi-ment mode enabled, you can move the cursor like so:
 
         M-l
     

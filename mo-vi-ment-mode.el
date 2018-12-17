@@ -30,12 +30,12 @@
 (defun mo-vi-ment-jump-down ()
   "Move the point down by `mo-vi-ment-jump-length' lines. Useful for scrolling quickly."
   (interactive)
-  (goto-line (+ (line-number-at-pos) mo-vi-ment-jump-length)))
+  (forward-line mo-vi-ment-jump-length))
 
 (defun mo-vi-ment-jump-up ()
   "Move the point up by `mo-vi-ment-jump-length' lines. Useful for scrolling quickly."
   (interactive)
-  (goto-line (- (line-number-at-pos) mo-vi-ment-jump-length)))
+  (forward-line (- 0 mo-vi-ment-jump-length)))
 
 (defun mo-vi-ment-jump-left ()
   "Move the point left by `mo-vi-ment-jump-length' characters. Useful for moving quickly."
@@ -65,7 +65,7 @@
 ;;;###autoload
 (define-minor-mode mo-vi-ment-mode
   ;; Description
-  "Toggle Mo-vi-ment mode. 
+  "Toggle Mo-vi-ment mode.
 Interactively with no argument, this command toggles mo-vi-ment mode.
 A positive prefix argument enables the mode, any other prefix
 argument disables it. From Lisp, argument omitted or nil enables
@@ -74,16 +74,16 @@ the mode, `toggle' toggles the state.
 When mo-vi-ment mode is enabled, the following key bindings are set -
 
     \\{mo-vi-ment-mode-map}"
-  
+
   ;; Initial value
   nil
-  
+
   ;; The indicator for the mode-line
   " mo-vi-ment"
-  
+
   ;; Keybindings
   mo-vi-ment-mode-map
-  
+
   ;; Globalize it
   :global t)
 
